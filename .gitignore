@@ -1,0 +1,21 @@
+#.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/ 
+env/
+# Docker
+.dockerignore
+instance/
+
+#VSCode
+.vscode/ 
+
+# Environment variables
+.env
