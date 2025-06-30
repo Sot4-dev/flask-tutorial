@@ -1,10 +1,10 @@
 import os
-from flaxk import Flask
+from flask import Flask
 
-def creat_app(test_config=None):
+def create_app(test_config=None):
     # アプリを作成して設定する
-    app = Flask(__name,instance_relative_config=True)
-    app.confog.from_mapping(
+    app = Flask(__name__,instance_relative_config=True)
+    app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, "flaskr.sqlite"),
     )

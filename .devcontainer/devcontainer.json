@@ -22,7 +22,7 @@
 	// "features": {},
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {}
-	}
+	},
 
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -36,6 +36,7 @@
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "cat /etc/os-release",
+	"postCreateCommand": "pip install -e ."
 
 	// Configure tool-specific properties.
 	// "customizations": {},
